@@ -35,4 +35,6 @@ export default {
     }
 
 }
+// stable version
 </script>
+
