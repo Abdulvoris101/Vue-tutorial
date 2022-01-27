@@ -1,13 +1,16 @@
 <template>
-  <PhotoRedactor />
+  <FindUser />
 </template>
 
 <script>
-import PhotoRedactor from '@/components/PhotoRedactor'
+import FindUser from '@/components/FindUser' 
+// homework
+// import userCard from '@/components/userCard'
+
 export default {
   name: 'App',
   components: {
-    PhotoRedactor
+    FindUser
   }
 }
 </script>
