@@ -1,16 +1,17 @@
 <template>
-  <PhotoRedactor />
+  <ProductList />
 </template>
 
 <script>
 // import FindUser from '@/components/FindUser' 
 // homework
 // import userCard from '@/components/userCard'
-import PhotoRedactor from '@/components/PhotoRedactor'
+import ProductList from '@/components/ProductList'
+
 export default {
   name: 'App',
   components: {
-    PhotoRedactor
+    ProductList,
   }
 }
 </script>

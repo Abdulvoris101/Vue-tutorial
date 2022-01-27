@@ -13,17 +13,11 @@
                 <h2>Filters</h2>
                 <div class="btn-group ">
                     <button 
-                v-if="isCatVisible"
                 @click="isCatVisible = !isCatVisible"
                 >
-                    Not showing 
+                    {{ isCatVisible ? 'Not Showing' : 'Showing'}} 
                 </button>
-                <button 
-                v-else
-                @click="isCatVisible = !isCatVisible"
-                >
-                    Showing 
-                </button>
+             
                 <button 
                 :class="imgFilters.sepia ? 'active' : ''"
                 @click="imgFilters.sepia = !imgFilters.sepia">
@@ -35,16 +29,10 @@
                     Border
                 </button>
                 <button 
-                v-if="imgFilters.small" 
                 @click="imgFilters.small = !imgFilters.small">
-                    Large
+                    {{ imgFilters.small ? 'Large' : 'Small' }}
                 </button>
-                <button 
-                v-else 
-                :class="imgFilters.small ? 'active' : ''"
-                @click="imgFilters.small = !imgFilters.small">
-                    Small
-                </button>
+                
                 </div>
 
                 <h2>Img Size</h2>
